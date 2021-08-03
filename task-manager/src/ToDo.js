@@ -9,12 +9,14 @@ function ToDo ({ id, input, priority }) {
     }
     
     return(
-        <div className={priority}>
-            <h3>{input}</h3>
-            <button onClick={handleRemove}>X</button>
-            <input type="checkbox" />
-            <label>Completed?</label>
-        </div>
+        <>
+            <div className={priority}>
+                <h3>{input}</h3>
+                <button onClick={handleRemove}>X</button>
+                <input type="checkbox" />
+                <label>Completed?</label>
+            </div>
+        </>
     )
 }
 

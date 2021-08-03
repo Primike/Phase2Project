@@ -3,12 +3,10 @@ import ToDoContainer from "./ToDoContainer";
 
 function Main () { 
     return (
-        <>
-            <GroceryContainer />
-            <hr/>
+        <div className="main">
+            <GroceryContainer/>
             <ToDoContainer />
-            <hr />
-        </>
+        </div>
     )
 }
 

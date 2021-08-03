@@ -17,11 +17,11 @@ function ToDoContainer () {
 
     
     return (
-        <>
+        <div className="todo">
            <h1>TO-DOS</h1>
            <ToDoForm setToDoArray={setToDoArray}/>
             {toDo}
-        </>
+        </div>
     )
 }
 

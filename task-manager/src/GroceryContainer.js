@@ -17,12 +17,12 @@ function GroceryContainer () {
 
     
     return (
-        <>
+        <div className="groceries">
            <h1>GROCERIES</h1>
            <GroceryForm setGroceryArray={setGroceryArray}/>
             {grocery}
-        </>
+        </div>
     )
 }
 
-export default GroceryContainer
+export default GroceryContainer;

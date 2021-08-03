@@ -30,18 +30,18 @@ function ToDoForm({ setToDoArray }){
 
     return (
         <form id="todo-form" onSubmit={handleSubmit}>
-                <label>
+                <label className="label1">
                     New To-Do: 
                     <input onChange={handleInputChange} type="text" name="input" />
                 </label>
-                <label>Set priority: </label>
+                <label className="label2">Set priority: </label>
                 <select className="priority" onChange={handlePriorityChange} name="priority">
                     <option selected="selected" disabled> </option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
-                <input type="submit" value="Submit" />
+                <input className="input" type="submit" value="Submit" />
             </form>
     )
 }
